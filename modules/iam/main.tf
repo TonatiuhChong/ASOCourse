@@ -52,11 +52,3 @@ resource "aws_iam_role_policy" "apigw_lambda_invoke_policy" {
     }]
   })
 }
-
-output "lambda_exec_role_arn" {
-  value = aws_iam_role.lambda_exec.arn
-}
-
-output "apigw_lambda_invoke_role_arn" {
-  value = aws_iam_role.apigw_lambda_invoke.arn
-}

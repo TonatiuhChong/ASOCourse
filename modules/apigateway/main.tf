@@ -1,18 +1,3 @@
-variable "lambda_function_arn" {
-  description = "ARN of the Lambda function to invoke"
-  type        = string
-}
-
-variable "lambda_invoke_role_arn" {
-  description = "IAM role ARN that API Gateway assumes to invoke Lambda"
-  type        = string
-}
-
-variable "region" {
-  description = "AWS region"
-  type        = string
-}
-
 resource "aws_api_gateway_rest_api" "api" {
   name = "apigw-triggers-lambda"
 }
